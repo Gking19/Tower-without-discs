@@ -7,6 +7,8 @@ import java.util.ArrayList;
  */
 public class Tower
 {
+    private int removedSize;
+    private int addedDiscSize;
     ArrayList<Integer> tower;
     public Tower(int Size){
         tower = new ArrayList<Integer>(Size);
@@ -38,5 +40,20 @@ public class Tower
         else{
             return tower.get(0);
         }
+    }
+    
+    public int removeDisc(){
+        removedSize = this.getSize();
+        if(tower.size() > 0){
+            tower.remove(0);
+            return removedSize;
+        }
+        return removedSize;
+    }
+    
+    public int addDisc(){
+        addedDiscSize = this.getSize() + 1;
+        tower.add(addedDiscSize);
+        return addedDiscSize;
     }
 }
