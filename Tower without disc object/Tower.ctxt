@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=Size
+comment0.target=Tower(int)
+comment1.params=
+comment1.target=Tower()
+comment2.params=fromTower\ toTower
+comment2.target=boolean\ moveDisc(Tower,\ Tower)
+comment3.params=
+comment3.target=int\ getSize()
+numComments=4
