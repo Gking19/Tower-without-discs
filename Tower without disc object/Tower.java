@@ -25,7 +25,7 @@ public class Tower
             System.out.println("Invalid movement, cannot move disc to its own tower.");
             return false;
         }
-        else if(toTower.getSize() < fromTower.getSize() && toTower.getSize() > 0){
+        else if(toTower.getDiscSize() < fromTower.getDiscSize() && toTower.getDiscSize() > 0){
             System.out.println("Invalid movement, disc on selected tower is smaller than disc being moved.");
             return false;
         }
@@ -35,7 +35,7 @@ public class Tower
         }
     }
 
-    public int getSize(){
+    public int getDiscSize(){
         if(tower.size() == 0){
             return 0;
         }
@@ -45,8 +45,9 @@ public class Tower
         }
     }
 
+    
     public int removeDisc(){
-        removedDisc = this.getSize();
+        removedDisc = this.getDiscSize();
         if(tower.size() > 0){
             return removedDisc = tower.remove(0);
         }
@@ -59,7 +60,7 @@ public class Tower
     }
 
     public int addDisc(){
-        addedDiscSize = this.getSize() + 1;
+        addedDiscSize = this.getDiscSize() + 1;
         tower.add(addedDiscSize);
         return addedDiscSize;
     }
