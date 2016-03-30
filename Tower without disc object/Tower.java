@@ -20,6 +20,9 @@ public class Tower
         this(3);
     }
 
+    /**
+     * Moves integer value between fromTower and toTower
+     */
     public boolean moveDisc(Tower fromTower, Tower toTower){
         if(fromTower == toTower){
             System.out.println("Invalid movement, cannot move disc to its own tower.");
@@ -35,6 +38,9 @@ public class Tower
         }
     }
 
+    /**
+     * Returns size of disc on top of tower
+     */
     public int getDiscSize(){
         if(tower.size() == 0){
             return 0;
@@ -59,6 +65,10 @@ public class Tower
         return removedDisc;
     }
 
+    /**
+     * Creates discs represented as integers
+     * Only used to create discs in the beginning
+     */
     public int addDisc(){
         addedDiscSize = this.getDiscSize() + 1;
         tower.add(addedDiscSize);
