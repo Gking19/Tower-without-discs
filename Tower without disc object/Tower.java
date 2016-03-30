@@ -55,7 +55,7 @@ public class Tower
     }
 
     public int addMovedDisc( int removedDisc){
-        tower.add(removedDisc);
+        tower.add(0 , removedDisc);
         return removedDisc;
     }
 
