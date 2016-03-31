@@ -51,7 +51,6 @@ public class Tower
         }
     }
 
-    
     public int removeDisc(){
         removedDisc = this.getDiscSize();
         if(tower.size() > 0){
@@ -73,5 +72,34 @@ public class Tower
         addedDiscSize = this.getDiscSize() + 1;
         tower.add(addedDiscSize);
         return addedDiscSize;
+    }
+
+    /**
+     * All tX to tY methods are movements between specified towers
+     * ex: t1tot2 is tower1 to tower2
+     */
+    public boolean t1tot2(){
+        this.moveDisc(this, this);
+        return true;
+    }
+
+    public boolean t1tot3(){
+
+    }
+
+    public boolean t2tot3(){
+
+    }
+
+    public boolean t3tot2(){
+
+    }
+
+    public boolean t2tot1(){
+
+    }
+
+    public boolean t3tot1(){
+
     }
 }
