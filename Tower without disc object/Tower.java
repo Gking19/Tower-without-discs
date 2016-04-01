@@ -72,6 +72,10 @@ public class Tower
         tower.add(addedDiscSize);
         return addedDiscSize;
     }
+    
+    public int getSize(){
+        return tower.size();
+    }
 
     /**
      * All tX to tY methods are movements between specified towers

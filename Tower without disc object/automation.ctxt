@@ -1,6 +1,4 @@
 #BlueJ class context
 comment0.params=numOfDiscs
 comment0.target=void\ main(int)
-comment1.params=numOfDiscs
-comment1.target=boolean\ solvePuzzle(int)
-numComments=2
+numComments=1

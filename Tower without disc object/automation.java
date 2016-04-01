@@ -3,7 +3,7 @@ import java.lang.Math;
  * Automates the tower of hanoi game.
  * 
  * @author Gary Carlson 
- * @version V1
+ * @version V2
  */
 public class automation
 {
@@ -31,7 +31,7 @@ public class automation
 
     }
 
-    public boolean solvePuzzle(int numOfDiscs){
+   /* public boolean solvePuzzle(int numOfDiscs){
         Tower tower1 = new Tower();
         Tower tower2 = new Tower();
         Tower tower3 = new Tower();
@@ -39,6 +39,10 @@ public class automation
             tower1.addDisc();
         }
         
+        if(tower3.getSize() = numOfDiscs){
+            return true;
+        }
         return true;
     }
+    */
 }
