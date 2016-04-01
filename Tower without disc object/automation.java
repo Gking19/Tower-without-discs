@@ -10,12 +10,12 @@ public class automation
     static long start;
     static long end;
     static long elapsedTime;
-    public static void main(String[] args){
+    public static void main(int numOfDiscs){
         start = System.nanoTime();
         Tower tower1 = new Tower();
         Tower tower2 = new Tower();
         Tower tower3 = new Tower();
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < numOfDiscs; i++){
             tower1.addDisc();
         }
         tower1.moveDisc(tower1 , tower3);
@@ -29,5 +29,16 @@ public class automation
         elapsedTime = end - start;
         System.out.println(elapsedTime);
 
+    }
+
+    public boolean solvePuzzle(int numOfDiscs){
+        Tower tower1 = new Tower();
+        Tower tower2 = new Tower();
+        Tower tower3 = new Tower();
+        for(int i = 0; i < numOfDiscs; i++){
+            tower1.addDisc();
+        }
+        
+        return true;
     }
 }

@@ -9,11 +9,10 @@ public class Tower
 {
     private int removedDisc;
     private int addedDiscSize;
-
     ArrayList<Integer> tower;
+
     public Tower(int Size){
         tower = new ArrayList<Integer>(Size);
-
     }
 
     public Tower(){
@@ -59,7 +58,7 @@ public class Tower
         return removedDisc;
     }
 
-    public int addMovedDisc( int removedDisc){
+    public int addMovedDisc(int removedDisc){
         tower.add(0 , removedDisc);
         return removedDisc;
     }
@@ -79,27 +78,26 @@ public class Tower
      * ex: t1tot2 is tower1 to tower2
      */
     public boolean t1tot2(){
-        this.moveDisc(this, this);
         return true;
     }
 
     public boolean t1tot3(){
-
+        return true;
     }
 
     public boolean t2tot3(){
-
+        return true;
     }
 
     public boolean t3tot2(){
-
+        return true;
     }
 
     public boolean t2tot1(){
-
+        return true;
     }
 
     public boolean t3tot1(){
-
+        return true;
     }
 }
